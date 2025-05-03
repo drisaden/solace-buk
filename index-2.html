@@ -377,40 +377,54 @@
 
     <!-- RECENT PUBLICATIONS -->
     <section class="bg-gray-100 py-20 md:py-32 px-4" id="publications">
-      <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
-        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
-            <li class="me-2" role="presentation">
-                <button class="inline-block p-4 border-b-2 rounded-t-lg" id="All-tab" data-tabs-target="#All" type="button" role="tab" aria-controls="All" aria-selected="false">All</button>
-            </li>
-            <li class="me-2" role="presentation">
-                <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="News-tab" data-tabs-target="#News" type="button" role="tab" aria-controls="News" aria-selected="false">News</button>
-            </li>
-            <li class="me-2" role="presentation">
-                <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="Legalbit-tab" data-tabs-target="#Legalbit" type="button" role="tab" aria-controls="Legalbit" aria-selected="false">Legal bit</button>
-            </li>
-            <li role="presentation">
-                <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="Poetrylines-tab" data-tabs-target="#Poetrylines" type="button" role="tab" aria-controls="Poetrylines" aria-selected="false">Poetry Lines</button>
-            </li>
-        </ul>
-    </div>
-    <div id="default-tab-content">
-        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="All" role="tabpanel" aria-labelledby="All-tab">
-          <div id="populate-All" class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 px-4 mx-auto"></div>
+      <div class="mb-14" data-aos="fade-down">
+        <h2 class="text-center text-2xl md:text-5xl uppercase tracking-wider font-bold"> News & Publications</h2>
+        <h6 class="text-center text-xs md:text-base mb-5 font-light mt-1 md:mt-6"> Read and digest our periodic publications.</h6>
+      </div>
+      <!--categories-->
+      <div class="flex justify-center">
+        <button class="inline-block animate-float-in-from-bottom text-white font-semibold text-center  rounded-lg bg-red-600 text-xs md:text-lg md:px-14 md:py-5 p-2 "> <a class="text-white" href="#"> All <i class=" font-bold text-red-600"> </i> </a> </button>
+        <button class="inline-block animate-float-in-from-bottom text-gray-500 font-semibold text-center  rounded-lg ml-2 border border-gray-300 bg-white text-sm md:text-xl md:px-14 md:py-5 p-1  "> <a class=" " href="legalbit.html"> Legal Bit <i class=" text-red-600"> </i> </a> </button>
+
+        <button class="inline-block animate-float-in-from-bottom text-gray-500 font-semibold text-center  rounded-lg ml-2 border border-gray-300 bg-white text-sm md:text-xl md:px-14 md:py-5 p-1 "> <a class="" href="news.html"> News & Updates <i class=" font-bold text-red-600"> </i> </a> </button>
+        <button class="inline-block animate-float-in-from-bottom text-gray-500 font-semibold text-center  rounded-lg ml-2 border border-gray-300 bg-white text-sm md:text-xl md:px-14 md:py-5 p-1 "> <a class=". " href="poetrylines.html"> Poetry Lines<i class=" font-bold text-red-600"> </i> </a> </button>
+
+      </div>
+      <!--publication samples grid-->
+      <article class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 px-4 mx-auto">
+        <!-- pub 1-->
+        <div data-aos="fade-up" class="md:grid-span-2 bg-white w-full rounded-lg mb-3 shadow-lg">
+          <div class="md:w-full overflow-hidden rounded-t">
+            <img src="https://i.ibb.co/TYVjVdM/1674711726455563-0.jpg" alt="publication caption" class="w-full h-full object-cover object-center">
+          </div>
+          <!--title, abstract & read more-->
+          <div class="px-5 ">
+            <h3 class="text-base md:text-3xl mt-8 font-bold tracking-tighter uppercase "> AN APPEAL AGAINST THE DECISION OF THE LPDC LIES NOT DIRECTLY TO THE SUPREME COURT </h3>
+            <div class=" my-5 ">
+              <date class="text-sm md:text-lg  text-justify text-gray-800"> <i class="fas fa-calendar text-gray-800"></i> January 25, 2023 </date>
+            </div>
+            <p class="text-sm mt-4 md:text-2xl tracking-tight "> Before the Supreme Court decision in ALADEJOBI V. NIGERIA BAR ASSOCIATION (2013) LPELR-SC.121/2011, the position of the law as established in OKIKE V. LPDC (2005) 15 NWLR (Pt. 949) 471 was that an appeal against the direction of the Legal Practitioner Disciplinary Committee (LPDC) lies directly before the Supreme Court. However, the Supreme Court has...</p>
+          </div>
+          <a href="http://solacebuk.blogspot.com/2023/01/an-appeal-against-decision-of-lpdc-lies.html" class="block text-sm md:text-2xl mt-9 text-center bg-yellow-500 bg-gradient-to-br from-yellow-600 to-yellow-400   shadow-lg text-white py-2 font-semibold "> READ MORE » </a>
         </div>
-        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="News" role="tabpanel" aria-labelledby="News-tab">
-          <div id="populate-News" class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 px-4 mx-auto"></div>
-        </div>
-        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="Legalbit" role="tabpanel" aria-labelledby="Legalbit-tab">
-          <div id="populate-Legalbit" class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 px-4 mx-auto"></div>
+
+        <!-- pub 2-->
+        <div data-aos="fade-up" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
 
         </div>
-        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="Poetrylines" role="tabpanel" aria-labelledby="Poetrylines-tab">
-          <div id="populate-Poetrylines" class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 px-4 mx-auto"></div>
-        </div>
-    </div>
-    
-</div>
+        <!-- pub 3-->
+        <div data-aos="fade-up" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
 
+
+        </div>
+        <!-- pub 4-->
+        <div data-aos="fade-up" class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
+
+
+        </div>
+        <!-- important div close-->
+        </div>
+      </article>
 
     </section>
 
@@ -637,7 +651,7 @@
     <main class="reachout-section py-10 md:py-32 bg-gray-200" id="contact">
       <h2 class="text-3xl md:text-5xl font-bold text-center"> Reach out to Us </h2>
       <p class="text-sm text-center md:text-2xl mt-3 mb-6 md:mb-12 md:mt-8 px-2 md:px-10"> For Partnerhip & Sponsorship</p>
-      <section data-aos="fade-up" class="mx-10 md:mx-20 px-8 py-8 bg-white rounded-lg">
+      <section data-aos="fade-up" class="mx-10 md:mx-20 px-8 py-8 bg-white rounded-lg" style="background-color: ; ">
         <div class=" ">
           <form class="  " action="https://formspree.io/f/xeoalkll" method="POST" style="width: ">
             <!--<label class="inline-block text-sm md:text-3xl font-semibold text-justify justify-between text-black hover:border-yellow-500" style="">      </label>-->
@@ -783,8 +797,6 @@
 
       setInterval(changeBackgroundImage, 15000); // Change image every 5 seconds
     </script>
-    <!-- <script src="./js/blog.js"></script> -->
-    <script src="./js/playground.js"></script>
 </body>
 
 </html>
