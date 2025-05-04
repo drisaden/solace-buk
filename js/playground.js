@@ -48,20 +48,20 @@ window.onload = function () {
   
   function createCard(item, src) {
     return `
-      <div data-aos=" " class="bg-gray-100 shadow-lg w-full rounded-lg mb-3 aos-init aos-animate">
+      <div data-aos=" " class="bg-gray-100 shadow-lg w-full rounded-lg mb-1 aos-init aos-animate">
         <div class="md:w-full overflow-hidden rounded-t">
           <img src="${src}" alt="${item.title}" class="w-full h-full object-cover object-center border border-b-0">
         </div>
-        <div class="text-center pt-10">
+        <div class="text-center pt-6">
           <h2 class="text-base md:text-3xl pt-5 my-8 font-bold tracking-tight uppercase">${item.title}</h2> 
-          <author class="text-gray-600 mb-6 text-xs">
+          <author class="text-gray-600 mb-4 text-xs">
             <span class="font-bold">Author:</span> ${item.content.match(/Written\s+By:\s*([^\.<]+)/i)?.[1].trim() || 'Unknown Author'}
           </author>
-          <p class="px-5 text-sm mb-8 md:text-2xl tracking-tight">
+          <p class="px-5 text-sm mb-5 md:text-2xl tracking-tight">
             ${item.content.replace(/<[^>]+>/g, '').split(' ').slice(0, 30).join(' ')} ...
           </p>
           <a href="http://drisaden.github.io/solace-buk/single.html?id=${item.id}" target="_blank" class="px-5">
-            <p class="text-sm button md:text-2xl text-blue-700 mb-5 px-5 font-semibold uppercase">Read More »</p>
+            <p class="text-sm button md:text-2xl text-blue-700 mb-2 px-5 font-semibold uppercase">Read More »</p>
           </a>
           <hr>
           <p class="text-sm md:text-lg font-semibold my-6 text-gray-600">

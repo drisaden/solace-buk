@@ -330,7 +330,7 @@
         const cleanText = item.content.replace(/<[^>]+>/g, '').split(' ').slice(0, 30).join(' ') + '...';
         const date = formatDate(item.published.split('T')[0]);
 
-        newsSection.innerHTML += `<div data-aos=" " class="bg-gray-100 shadow-lg w-full rounded-lg mb-3 aos-init aos-animate">
+        newsSection.innerHTML += `<div data-aos="fade-down" class="bg-gray-100 shadow-lg w-full rounded-lg mb-3 aos-init aos-animate">
         <div class="md:w-full overflow-hidden rounded-t">
           <img src="${src}" alt="${item.title}" class="w-full h-full object-cover object-center border border-b-0">
         </div>
